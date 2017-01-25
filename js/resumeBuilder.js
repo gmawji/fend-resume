@@ -57,13 +57,13 @@ var bio = {
 bio.work = {
 	"position" : "NAS Product Specialist",
 	"employer" : "SimplyNAS",
-	"years" : 8 "years",
+	"years" : 8 + "years",
 	"city" : "Sanford, FL"
 };
 
 bio["edu"] = {
 	"name" : "Lake Mary High School",
-	"years": 4 "years",
+	"years": 4 + "years",
 	"city" : "Lake Mary, FL"
 };
 
