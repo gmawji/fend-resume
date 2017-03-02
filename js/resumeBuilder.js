@@ -55,7 +55,7 @@ var bio = {
 };
 
 bio.work = {
-	"position" : "NAS Product Specialist",
+	"position" : "Front-End Web Developer",
 	"employer" : "SimplyNAS",
 	"years" : 8 + "years",
 	"city" : "Sanford, FL"
@@ -80,4 +80,5 @@ $("#header").append(bio.picture);
 $("#header").append(bio.welcome);
 $("#header").append(bio.skills);
 $("#header").append(bio.work.position);
+$("#header").append(bio.edu.name);
 
