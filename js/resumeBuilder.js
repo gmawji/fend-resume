@@ -1,8 +1,8 @@
 var avatar = HTMLbioPic.replace("%data%", "images/bioPic.png");
 
 var bio = {
-	"name" : formattedName,
-	"role" : formattedRole,
+	"name" : "Gulamabbas Mawji",
+	"role" : "Front-End Web Developer",
 	"contacts" : {
 		"mobile" : "407-416-6482",
 		"email" : "dev@gmawji.com",
@@ -10,8 +10,8 @@ var bio = {
 		"location" : "Lake Mary, Florida",
 		"github" : "gmawji"
 	},
-	"picture" : avatar,
-	"welcome" : "Welcome Msg ..... ...... ...",
+	"biopic" : images/bioPic.png,
+	"welcomeMessage" : "Welcome Msg ..... ...... ...",
 	"skills" : ["HTML", "CSS","Python", "GitHub", "Management"]
 };
 
@@ -45,26 +45,25 @@ var education = {
 	"schools": [
 		{
 			"name": "Lake Mary High School",
-			"years": "4 Years",
-			"city": "Lake Mary, FL",
-			"majors": ["High School Diploma"],
+			"dates": "2003 - 2007",
+			"location": "Lake Mary, FL",
+			"degree": "High School Diploma",
+			"majors": ["N/A"],
 			"graduation": "May 2007"
 		}
 	],
 	"onlineCourses": [
 		{
-			"name": "Udacity",
-			"years": "1 Year",
-			"city": "Worldwide",
-			"majors": ["Front-End Web Developer Nanodegree"],
-			"graduation": "Ongoing"
+			"school": "Udacity",
+			"dates": "2017",
+			"location": "Worldwide",
+			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 		},
 		{
-			"name": "Udacity",
-			"years": "1 Year",
-			"city": "Worldwide",
-			"majors": ["Full Stack Web Developer Nanodegree"],
-			"graduation": "Ongoing"
+			"school": "Udacity",
+			"years": "2016-2017",
+			"location": "Worldwide",
+			"url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
 		}
 	]
 }
@@ -91,5 +90,6 @@ var projects = {
 			"dates": "Nov 2016",
 			"description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers."
 		}
-	]
+	],
+		"images": []
 }
