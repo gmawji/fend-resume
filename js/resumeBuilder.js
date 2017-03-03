@@ -66,17 +66,27 @@ var education = {
 	]
 }
 
-
-$("#header").prepend(bio.role);
-$("#header").prepend(bio.name);
-$("#header").append(bio.contacts.mobile);
-$("#header").append(bio.contacts.email);
-$("#header").append(bio.contacts.twitter);
-$("#header").append(bio.contacts.location);
-$("#header").append(bio.contacts.github);
-$("#header").append(bio.picture);
-$("#header").append(bio.welcome);
-$("#header").append(bio.skills);
-$("#header").append(work.position);
-$("#header").append(edu.name);
-
+var projects = {
+	"projects": [
+		{
+			"title": "Build A Portfolio",
+			"dates": "Oct 2016 - Dec 2016",
+			"description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully responsive and works on mobile, tablet, and desktop browsers."
+		},
+		{
+			"title": "Tournament Results",
+			"dates": "Jan 2016 - Feb 2016",
+			"description": "Built a PostgreSQL relational database scheme to store the results of a game tournament. Also provided a number of queries to efficiently report the results of the tournament and determine the winner."
+		},
+		{
+			"title": "Multi User Blog",
+			"dates": "Jan 2016",
+			"description": "Built a multi-user blog, hosted on Google App Engine, with comments and login functionality."
+		},
+		{
+			"title": "Movie Trailer Website",
+			"dates": "Nov 2016",
+			"description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers."
+		}
+	]
+}
