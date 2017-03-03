@@ -1,5 +1,3 @@
-var avatar = HTMLbioPic.replace("%data%", "images/bioPic.png");
-
 var bio = {
 	"name" : "Gulamabbas Mawji",
 	"role" : "Front-End Web Developer",
