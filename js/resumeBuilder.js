@@ -10,7 +10,7 @@ var bio = {
 		"location" : "Lake Mary, Florida",
 		"github" : "gmawji"
 	},
-	"biopic" : images/bioPic.png,
+	"biopic" : "images/bioPic.png",
 	"welcomeMessage" : "Welcome Msg ..... ...... ...",
 	"skills" : ["HTML", "CSS","Python", "GitHub", "Management"]
 };
@@ -73,7 +73,8 @@ var projects = {
 		{
 			"title": "Build A Portfolio",
 			"dates": "Oct 2016 - Dec 2016",
-			"description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully responsive and works on mobile, tablet, and desktop browsers."
+			"description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully responsive and works on mobile, tablet, and desktop browsers.",
+			"images": ["https://www.dropbox.com/s/m3ba03752dhy23h/Screenshot%202017-03-03%2002.20.34.png?dl=0"]
 		},
 		{
 			"title": "Tournament Results",
@@ -83,13 +84,14 @@ var projects = {
 		{
 			"title": "Multi User Blog",
 			"dates": "Jan 2016",
-			"description": "Built a multi-user blog, hosted on Google App Engine, with comments and login functionality."
+			"description": "Built a multi-user blog, hosted on Google App Engine, with comments and login functionality.",
+			"images": ["https://www.dropbox.com/s/9oq2n7efnva4evn/Screenshot%202017-03-03%2002.19.22.png?dl=0"]
 		},
 		{
 			"title": "Movie Trailer Website",
 			"dates": "Nov 2016",
-			"description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers."
+			"description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.",
+			"images": ["https://www.dropbox.com/s/yzkm9snlnitql5y/Screenshot%202017-03-03%2002.21.24.png?dl=0"]
 		}
-	],
-		"images": []
+	]
 }
