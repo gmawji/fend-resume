@@ -18,22 +18,25 @@ var bio = {
 var work = {
 	"jobs": [
 		{
-			"position" : "Web & Designer",
-			"employer" : "Freelance",
-			"years" : "4 Years",
-			"city" : "Sanford, FL"
+			"title": "Web & Designer",
+			"employer": "Freelance",
+			"dates": "January 2012 - Present",
+			"location": "Sanford, FL",
+			"description": "Designing and selling iOS themes for iPhones, iPads. Designing mail shots for clients. Providing web services for clients, such as updating content, providing graphics, home page refreshes, minor SEO assistance, product entry, and other website maintenance."
 		},
 		{
-			"position" : "Co-Founder",
-			"employer" : "SimplyGroup Inc",
-			"years" : "8 Years",
-			"city" : "Sanford, FL"
+			"title": "Co-Founder",
+			"employer": "SimplyGroup Inc",
+			"dates": "March 2088 - October 2016",
+			"location": "Sanford, FL",
+			"description": "Making low-level storage accessible and easy for everyone. Network Attached Storage has grown into a consumer to enterprise level business. We make storage accessible for various vertical markets whilst also being one of the only few that provides its own support options (free & paid) to provide a truly value added service. We are The NAS Experts."
 		},
 		{
-			"position" : "Systems Integrator",
-			"employer" : "eAegis LLC",
-			"years" : "2 Years",
-			"city" : "Longwood, FL"
+			"title": "Systems Integrator",
+			"employer": "eAegis LLC",
+			"dates": "May 2005 - March 2007",
+			"location": "Longwood, FL",
+			"description": "We provide pre-sales and post-sales support in assiting customers choose low-level NAS storage for their storage needs. As a VAR System Integrator, eAegis was one of the first pioneering companies in the NAS market. We helped introduce the lnfrant range of NAS units in the US, they were later purchased by Netgear, Inc."
 		}
 	]
 }
