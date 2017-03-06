@@ -94,6 +94,8 @@ var projects = {
 	]
 }
 
+$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
+$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
 
 for (job in work.jobs) {
 	$("#workExperience").append(HTMLworkStart);
