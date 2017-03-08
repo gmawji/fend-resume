@@ -8,9 +8,9 @@ var bio = {
 		"location" : "Lake Mary, Florida",
 		"github" : "gmawji"
 	},
-	"biopic" : "images/bioPic.png",
+	"biopic" : "images/gmawjilogo.png",
 	"welcomeMessage" : "Welcome Msg ..... ...... ...",
-	"skills" : ["HTML", "CSS","Python", "GitHub", "Management"]
+	"skills" : ["HTML", "CSS","Python", "GitHub", "JavaScript", "NAS", "Photoshop"]
 };
 
 var work = {
@@ -25,7 +25,7 @@ var work = {
 		{
 			"title": "Co-Founder",
 			"employer": "SimplyGroup Inc",
-			"dates": "March 2088 - October 2016",
+			"dates": "March 2008 - October 2016",
 			"location": "Sanford, FL",
 			"description": "Making low-level storage accessible and easy for everyone. Network Attached Storage has grown into a consumer to enterprise level business. We make storage accessible for various vertical markets whilst also being one of the only few that provides its own support options (free & paid) to provide a truly value added service. We are The NAS Experts."
 		},
@@ -107,15 +107,32 @@ $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
 
 $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 
-for (job in work.jobs) {
-	$("#workExperience").append(HTMLworkStart);
+function displayWork() {
 
-	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-	var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-	var formattedEmployerTitle = formattedEmployer + formattedTitle;
+	if(work.jobs.length > 0) {
+	
+		$("#workExperience").append(HTMLworkStart);
 
-	$(".work-entry:last").append(formattedEmployerTitle);
+		for(i in work.jobs) {
+			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+			var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
+			var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
+			var formattedDates = HTMLworkDates.replace("%data%", work.jobs[i].dates);
+			var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
+
+			var formattedEmployerTitle = formattedEmployer + formattedTitle;
+
+			$(".work-entry:last").append(formattedEmployerTitle);
+			$(".work-entry:last").append(formattedLocation);
+			$(".work-entry:last").append(formattedDates);
+			$(".work-entry:last").append(formattedDescription);
+		}
+
+	}
+
 }
+
+displayWork();
 
 $("#header").append(HTMLskillsStart);
 
