@@ -134,8 +134,18 @@ function displayWork() {
 
 displayWork();
 
-$("#header").append(HTMLskillsStart);
+function displaySkills() {
 
-bio.skills.forEach(function(skill) {
-	$("#skills").append(HTMLskills.replace("%data%", [skill]));
+	if (bio.skills.length > 0) {
+
+		$("#header").append(HTMLskillsStart);
+
+		bio.skills.forEach(function(skill) {
+			$("#skills").append(HTMLskills.replace("%data%", [skill]));
 })
+
+	}
+
+}
+
+displaySkills()
