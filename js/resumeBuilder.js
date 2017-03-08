@@ -148,4 +148,4 @@ function displaySkills() {
 
 }
 
-displaySkills()
+displaySkills();
