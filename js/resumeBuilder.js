@@ -72,24 +72,25 @@ var projects = {
 			"title": "Build A Portfolio",
 			"dates": "Oct 2016 - Dec 2016",
 			"description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully responsive and works on mobile, tablet, and desktop browsers.",
-			"images": ["https://www.dropbox.com/s/m3ba03752dhy23h/Screenshot%202017-03-03%2002.20.34.png?dl=0"]
+			"images": ["images/portfolio.png"]
 		},
 		{
 			"title": "Tournament Results",
 			"dates": "Jan 2016 - Feb 2016",
-			"description": "Built a PostgreSQL relational database scheme to store the results of a game tournament. Also provided a number of queries to efficiently report the results of the tournament and determine the winner."
+			"description": "Built a PostgreSQL relational database scheme to store the results of a game tournament. Also provided a number of queries to efficiently report the results of the tournament and determine the winner.",
+			"images": ["images/tournament.png"]
 		},
 		{
 			"title": "Multi User Blog",
 			"dates": "Jan 2016",
 			"description": "Built a multi-user blog, hosted on Google App Engine, with comments and login functionality.",
-			"images": ["https://www.dropbox.com/s/9oq2n7efnva4evn/Screenshot%202017-03-03%2002.19.22.png?dl=0"]
+			"images": ["images/mub.png"]
 		},
 		{
 			"title": "Movie Trailer Website",
 			"dates": "Nov 2016",
 			"description": "Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.",
-			"images": ["https://www.dropbox.com/s/yzkm9snlnitql5y/Screenshot%202017-03-03%2002.21.24.png?dl=0"]
+			"images": ["images/movietrailer.png"]
 		}
 	]
 }
@@ -162,6 +163,39 @@ function displaySkills() {
 }
 
 displaySkills();
+
+projects.display = function() {
+
+	if (projects.projects.length > 0) {
+
+		for(i in projects.projects) {
+			$("#projects").append(HTMLprojectStart);
+
+			var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+			$(".project-entry:last").append(formattedTitle);
+
+			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
+			$(".project-entry:last").append(formattedDates);
+
+			var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+			$(".project-entry:last").append(formattedDescription);
+
+			for (image in projects.projects[i].images) {
+				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[image]);
+				$(".project-entry:last").append(formattedImage);
+
+//				var imageTag = document.getElementsByTagName("img")[1];
+//				var att = document.createAttribute("style");
+//				att.value = "width:300px;"
+//				imageTag.setAttributeNode(att);
+			}
+		}
+
+	}
+
+}
+
+projects.display()
 
 $(document).click(function(loc) {
   var x = loc.pageX;
