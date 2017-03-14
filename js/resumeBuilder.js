@@ -197,6 +197,8 @@ projects.display = function() {
 
 projects.display()
 
+$("#mapDiv").append(googleMap);
+
 $(document).click(function(loc) {
   var x = loc.pageX;
   var y = loc.pageY;
