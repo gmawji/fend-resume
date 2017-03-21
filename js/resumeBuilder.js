@@ -110,6 +110,18 @@ bio.display = function() {
 	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+
+	function displaySkills() {
+		if (bio.skills.length > 0) {
+			$("#header").append(HTMLskillsStart);
+
+			bio.skills.forEach(function(skill) {
+				$("#skills").append(HTMLskills.replace("%data%", [skill]));
+			});
+		}
+	}
+
+	displaySkills();
 };
 
 bio.display();
@@ -191,18 +203,6 @@ education.display = function() {
 };
 
 education.display();
-
-function displaySkills() {
-	if (bio.skills.length > 0) {
-		$("#header").append(HTMLskillsStart);
-
-		bio.skills.forEach(function(skill) {
-			$("#skills").append(HTMLskills.replace("%data%", [skill]));
-		});
-	}
-}
-
-displaySkills();
 
 projects.display = function() {
 	if (projects.projects.length > 0) {
