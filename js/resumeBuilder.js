@@ -47,7 +47,6 @@ var education = {
 			"location": "Watford, England",
 			"degree": "GCSE - ICT",
 			"majors": "IT",
-			"graduation": "August 2001"
 		},
 		{
 			"name": "Lake Mary High School",
@@ -55,7 +54,6 @@ var education = {
 			"location": "Lake Mary, FL",
 			"degree": "High School Diploma",
 			"majors": "General Education",
-			"graduation": "May 2007"
 		}
 	],
 	"onlineCourses": [
