@@ -42,11 +42,19 @@ var work = {
 var education = {
 	"schools": [
 		{
+			"name": "Ryde College",
+			"dates": "2000-2001",
+			"location": "Watford, England",
+			"degree": "GCSE - ICT",
+			"majors": "IT",
+			"graduation": "August 2001"
+		},
+		{
 			"name": "Lake Mary High School",
 			"dates": "2003 - 2007",
 			"location": "Lake Mary, FL",
 			"degree": "High School Diploma",
-			"majors": ["N/A"],
+			"majors": "General Education",
 			"graduation": "May 2007"
 		}
 	],
@@ -147,6 +155,34 @@ function displayWork() {
 }
 
 displayWork();
+
+education.display = function() {
+
+	if(education.schools.length > 0) {
+
+		for(var i = 0; i < education.schools.length; i++) {
+			$("#education").append(HTMLschoolStart);
+
+			var formattedName = HTMLschoolName.replace("%data%", education.schools[i].name);
+
+			var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
+
+			var formattedDegreeName = formattedName + formattedDegree;
+			$(".education-entry:last").append(formattedDegreeName);
+
+			var formattedDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
+			$(".education-entry:last").append(formattedDates);
+
+			var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
+			$(".education-entry:last").append(formattedLocation);
+
+			var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[i].majors);
+			$(".education-entry:last").append(formattedMajors);
+		}
+	}
+}
+
+education.display();
 
 function displaySkills() {
 
