@@ -141,9 +141,7 @@ work.display = function() {
 work.display();
 
 education.display = function() {
-
 	if(education.schools.length > 0) {
-
 		for(var i = 0; i < education.schools.length; i++) {
 			$("#education").append(HTMLschoolStart);
 
@@ -204,7 +202,6 @@ displaySkills();
 projects.display = function() {
 
 	if (projects.projects.length > 0) {
-
 		for(var i = 0; i < projects.projects.length; i++) {
 			$("#projects").append(HTMLprojectStart);
 
@@ -229,14 +226,12 @@ projects.display = function() {
 projects.display();
 
 function inName(name) {
-
 	name = name.trim().split(" ");
 
 	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
 	name[1] = name[1].toUpperCase();
 
 	return name[0] +" "+ name[1];
-
 }
 
 $("#main").append(internationalizeButton);
