@@ -1,9 +1,9 @@
 function changeHeader() {
-    $('span').first().addClass("header-role")
+  $('span').first().addClass("header-role")
 }
 $(changeHeader);
 
 function changeButton() {
-    $('button').first().addClass("btn")
+  $('button').first().addClass("btn")
 }
 $(changeButton);
