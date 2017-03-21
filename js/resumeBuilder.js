@@ -205,7 +205,7 @@ projects.display = function() {
 
 	if (projects.projects.length > 0) {
 
-		for(i in projects.projects) {
+		for(var i = 0; i < projects.projects.length; i++) {
 			$("#projects").append(HTMLprojectStart);
 
 			var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
@@ -219,20 +219,14 @@ projects.display = function() {
 
 			for (image in projects.projects[i].images) {
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[image]);
+				
 				$(".project-entry:last").append(formattedImage);
-
-//				var imageTag = document.getElementsByTagName("img")[1];
-//				var att = document.createAttribute("style");
-//				att.value = "width:300px;"
-//				imageTag.setAttributeNode(att);
 			}
 		}
-
 	}
-
 }
 
-projects.display()
+projects.display();
 
 function inName(name) {
 
