@@ -200,7 +200,6 @@ function displaySkills() {
 displaySkills();
 
 projects.display = function() {
-
 	if (projects.projects.length > 0) {
 		for(var i = 0; i < projects.projects.length; i++) {
 			$("#projects").append(HTMLprojectStart);
