@@ -1,4 +1,4 @@
-function changeHeaderImg() {
-    $('span').first().addClass("header-img")
+function changeHeader() {
+    $('span').first().addClass("header-role")
 }
-$(changeHeaderImg);
+$(changeHeader);
