@@ -60,15 +60,15 @@ var education = {
 	],
 	"onlineCourses": [
 		{
+			"title": "Front-End Web Developer Nanodegree",
 			"school": "Udacity",
 			"dates": "2017",
-			"location": "Worldwide",
 			"url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
 		},
 		{
+			"title": "Full Stack Web Developer Nanodegree",
 			"school": "Udacity",
-			"years": "2016-2017",
-			"location": "Worldwide",
+			"dates": "2016-2017",
 			"url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
 		}
 	]
@@ -178,6 +178,27 @@ education.display = function() {
 
 			var formattedMajors = HTMLschoolMajor.replace("%data%", education.schools[i].majors);
 			$(".education-entry:last").append(formattedMajors);
+		}
+	}
+
+	if(education.onlineCourses.length > 0) {
+		$("#education").append(HTMLonlineClasses);
+
+		for(var i = 0; i < education.onlineCourses.length; i++) {
+			$("#education").append(HTMLschoolStart);
+
+			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title);
+
+			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+
+			var formattedDegreeName = formattedTitle + formattedSchool;
+			$(".education-entry:last").append(formattedDegreeName);
+
+			var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
+			$(".education-entry:last").append(formattedDates);
+
+			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
+			$(".education-entry:last").append(formattedURL);
 		}
 	}
 }
