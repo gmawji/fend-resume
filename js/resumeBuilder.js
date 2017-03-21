@@ -110,19 +110,6 @@ bio.display = function() {
 
 bio.display();
 
-function inName(name) {
-
-	name = name.trim().split(" ");
-	console.log(name);
-	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-	name[1] = name[1].toUpperCase();
-
-	return name[0] +" "+ name[1];
-
-}
-
-$("#main").append(internationalizeButton);
-
 function displayWork() {
 
 	if(work.jobs.length > 0) {
@@ -198,6 +185,19 @@ projects.display = function() {
 }
 
 projects.display()
+
+function inName(name) {
+
+	name = name.trim().split(" ");
+
+	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+	name[1] = name[1].toUpperCase();
+
+	return name[0] +" "+ name[1];
+
+}
+
+$("#main").append(internationalizeButton);
 
 $("#mapDiv").append(googleMap);
 
