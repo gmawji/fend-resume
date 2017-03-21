@@ -37,7 +37,7 @@ var work = {
 			"description": "We provide pre-sales and post-sales support in assiting customers choose low-level NAS storage for their storage needs. As a VAR System Integrator, eAegis was one of the first pioneering companies in the NAS market. We helped introduce the lnfrant range of NAS units in the US, they were later purchased by Netgear, Inc."
 		}
 	]
-}
+};
 
 var education = {
 	"schools": [
@@ -70,7 +70,7 @@ var education = {
 			"url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
 		}
 	]
-}
+};
 
 var projects = {
 	"projects": [
@@ -99,7 +99,7 @@ var projects = {
 			"images": ["images/movietrailer.png"]
 		}
 	]
-}
+};
 
 bio.display = function() {
 	$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
@@ -112,7 +112,7 @@ bio.display = function() {
 	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
-}
+};
 
 bio.display();
 
@@ -134,7 +134,7 @@ work.display = function() {
 			$(".work-entry:last").append(formattedDescription);
 		}
 	}
-}
+};
 
 work.display();
 
@@ -171,17 +171,17 @@ education.display = function() {
 
 			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
 
-			var formattedDegreeName = formattedTitle + formattedSchool;
-			$(".education-entry:last").append(formattedDegreeName);
+			var formattedOnlineDegreeName = formattedTitle + formattedSchool;
+			$(".education-entry:last").append(formattedOnlineDegreeName);
 
-			var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-			$(".education-entry:last").append(formattedDates);
+			var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
+			$(".education-entry:last").append(formattedOnlineDates);
 
 			var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
 			$(".education-entry:last").append(formattedURL);
 		}
 	}
-}
+};
 
 education.display();
 
@@ -191,7 +191,7 @@ function displaySkills() {
 
 		bio.skills.forEach(function(skill) {
 			$("#skills").append(HTMLskills.replace("%data%", [skill]));
-		})
+		});
 	}
 }
 
@@ -213,7 +213,7 @@ projects.display = function() {
 
 			for (image in projects.projects[i].images) {
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[image]);
-				
+
 				$(".project-entry:last").append(formattedImage);
 			}
 		}
@@ -236,8 +236,8 @@ $("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
 
 $(document).click(function(loc) {
-  var x = loc.pageX;
-  var y = loc.pageY;
+	var x = loc.pageX;
+	var y = loc.pageY;
 
-  logClicks(x,y);
+	logClicks(x,y);
 });
