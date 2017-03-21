@@ -103,18 +103,20 @@ var projects = {
 	]
 }
 
-$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
-$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+bio.display = function() {
+	$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
+	$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
+	$("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
+	$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 
-$("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
-$("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
-$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
-$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
-$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+	$("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
+	$("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
+	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+}
 
-$("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
-
-$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
+bio.display();
 
 function inName(name) {
 
