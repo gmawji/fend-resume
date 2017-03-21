@@ -104,7 +104,6 @@ var projects = {
 }
 
 bio.display = function() {
-
 	$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
 	$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
 	$("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
@@ -115,15 +114,12 @@ bio.display = function() {
 	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
 	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
-
 }
 
 bio.display();
 
 work.display = function() {
-
 	if(work.jobs.length > 0) {
-	
 		$("#workExperience").append(HTMLworkStart);
 
 		for(var i = 0; i < work.jobs.length; i++) {
@@ -194,17 +190,13 @@ education.display = function() {
 education.display();
 
 function displaySkills() {
-
 	if (bio.skills.length > 0) {
-
 		$("#header").append(HTMLskillsStart);
 
 		bio.skills.forEach(function(skill) {
 			$("#skills").append(HTMLskills.replace("%data%", [skill]));
-})
-
+		})
 	}
-
 }
 
 displaySkills();
