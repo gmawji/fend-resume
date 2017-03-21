@@ -31,10 +31,11 @@ h1 {
   color: #f5a623;
   line-height: 48px;
   display: inline;
+  font-weight: 700;
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 24px;
   color: #999;
   line-height: 29px;
@@ -49,7 +50,7 @@ h3 {
 }
 
 h4 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   color: #4a4a4a;
   line-height: 17px;
@@ -63,6 +64,10 @@ h5 {
 
 }
 
+.header-role {
+  color:#fff;
+  font-weight: 300;
+}
 
 .date-text {
   font-style: italic;
@@ -115,7 +120,7 @@ a {
 }
 
 .white-text {
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
 }
 
