@@ -13,7 +13,7 @@ function mailConnect() {
 }
 $(mailConnect);
 
-function projectLinks() {
+function educationLinks() {
   $('div.education-entry').next().next().next().children('a').attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001')[0];
 
   $('div.education-entry').next().next().next().children('a').attr('target', '_blank')[0];
@@ -30,4 +30,4 @@ function projectLinks() {
 
   $('div.education-entry').next().next().next().children('a').attr('target', '_blank')[3];
 }
-$(projectLinks);
+$(educationLinks);
