@@ -36,3 +36,16 @@ function projectLinks() {
   initialize.slice(3,4).attr('href', 'https://github.com/gmawji/Movie-Trailer-Website-Project').attr('target', '_blank');
 }
 $(projectLinks);
+
+function educationLinks() {
+  var initialize = $('div.education-entry').next().next().next().children('a');
+
+  initialize.slice(0,1).attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001').attr('target', '_blank');
+
+  initialize.slice(1,2).attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001').attr('target', '_blank');
+
+  initialize.slice(2,3).attr('href', 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004').attr('target', '_blank');
+
+  initialize.slice(3,4).attr('href', 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004').attr('target', '_blank');
+}
+$(educationLinks);
