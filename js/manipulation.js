@@ -23,3 +23,16 @@ function workLinks() {
   initialize.slice(2,3).attr('href', 'http://www.eaegis.com').attr('target', '_blank');
 }
 $(workLinks);
+
+function projectLinks() {
+  var initialize = $('div.project-entry').children('a');
+
+  initialize.slice(0,1).attr('href', 'https://github.com/gmawji/Build-A-Portfolio-Website-Project').attr('target', '_blank');
+
+  initialize.slice(1,2).attr('href', 'https://github.com/gmawji/tournament-project-submit').attr('target', '_blank');
+
+  initialize.slice(2,3).attr('href', 'https://github.com/gmawji/multi-user-blog').attr('target', '_blank');
+
+  initialize.slice(3,4).attr('href', 'https://github.com/gmawji/Movie-Trailer-Website-Project').attr('target', '_blank');
+}
+$(projectLinks);
