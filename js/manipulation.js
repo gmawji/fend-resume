@@ -38,3 +38,14 @@ function projectLinks() {
   initialize.attr('href', 'https://github.com/gmawji/Movie-Trailer-Website-Project').attr('target', '_blank')[3];
 }
 $(projectLinks);
+
+function employerLinks() {
+  var initialize = $('div.work-entry').children('a');
+
+  initialize.attr('href', 'http://www.gmawji.com').attr('target', '_blank')[0];
+
+  initialize.attr('href', 'http://www.simplynas.com').attr('target', '_blank')[1];
+
+  initialize.attr('href', 'http://www.eaegis.com').attr('target', '_blank')[2];
+}
+$(employerLinks);
