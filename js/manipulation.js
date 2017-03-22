@@ -14,21 +14,15 @@ function mailConnect() {
 $(mailConnect);
 
 function educationLinks() {
-  $('div.education-entry').next().next().next().children('a').attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001')[0];
+  var initialize = $('div.education-entry').next().next().next().children('a');
 
-  $('div.education-entry').next().next().next().children('a').attr('target', '_blank')[0];
+  initialize.attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001').attr('target', '_blank')[0];
 
-  $('div.education-entry').next().next().next().children('a').attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001')[1];
+  initialize.attr('href', 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001').attr('target', '_blank')[1];
 
-  $('div.education-entry').next().next().next().children('a').attr('target', '_blank')[1];
+  initialize.attr('href', 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004').attr('target', '_blank')[2];
 
-  $('div.education-entry').next().next().next().children('a').attr('href', 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004')[2];
-
-  $('div.education-entry').next().next().next().children('a').attr('target', '_blank')[2];
-
-  $('div.education-entry').next().next().next().children('a').attr('href', 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004')[3];
-
-  $('div.education-entry').next().next().next().children('a').attr('target', '_blank')[3];
+  initialize.attr('href', 'https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004').attr('target', '_blank')[3];
 }
 $(educationLinks);
 
