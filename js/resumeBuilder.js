@@ -218,15 +218,14 @@ projects.display = function() {
 				projects.projects[i].description);
 			$(".project-entry:last").append(formattedDescription);
 
-			for (image in projects.projects[i].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[
-					i].images[image]);
+			projects.projects[i].images.forEach(function(image) {
+				var formattedImage = HTMLprojectImage.replace("%data%", (image));
 
 				$(".project-entry:last").append(formattedImage);
-			}
+			});
 		}
 	}
-}
+};
 
 function inName(name) {
 	name = name.trim().split(" ");
