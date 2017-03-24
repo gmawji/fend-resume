@@ -46,14 +46,16 @@ var education = {
 			"dates": "2000-2001",
 			"location": "Watford, England",
 			"degree": "GCSE - ICT",
-			"majors": ["IT"]
+			"majors": ["IT"],
+			"url": "http://schools.axcis.co.uk/schools-directory/ryde-college/37572"
 		},
 		{
 			"name": "Lake Mary High School",
 			"dates": "2003 - 2007",
 			"location": "Lake Mary, FL",
 			"degree": "High School Diploma",
-			"majors": ["General Education"]
+			"majors": ["General Education"],
+			"url": "http://www.lakemaryhs.scps.k12.fl.us/"
 		}
 	],
 	"onlineCourses": [{
