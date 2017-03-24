@@ -127,8 +127,6 @@ bio.display = function() {
 
 };
 
-bio.display();
-
 work.display = function() {
 	if (work.jobs.length > 0) {
 		$("#workExperience").append(HTMLworkStart);
@@ -149,8 +147,6 @@ work.display = function() {
 		}
 	}
 };
-
-work.display();
 
 education.display = function() {
 	if (education.schools.length > 0) {
@@ -205,8 +201,6 @@ education.display = function() {
 	}
 };
 
-education.display();
-
 projects.display = function() {
 	if (projects.projects.length > 0) {
 		for (var i = 0; i < projects.projects.length; i++) {
@@ -234,8 +228,6 @@ projects.display = function() {
 	}
 }
 
-projects.display();
-
 function inName(name) {
 	name = name.trim().split(" ");
 
@@ -255,3 +247,8 @@ $(document).click(function(loc) {
 
 	logClicks(x, y);
 });
+
+bio.display();
+work.display();
+education.display();
+projects.display();
