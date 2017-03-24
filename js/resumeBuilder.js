@@ -107,11 +107,11 @@ bio.display = function() {
 	$("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
 	$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 
-	$("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
-	$("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
-	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
-	$("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
-	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+	$("#topContacts, #footerContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
+	$("#topContacts, #footerContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
+	$("#topContacts, #footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+	$("#topContacts, #footerContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+	$("#topContacts, #footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 
 	function displaySkills() {
 		if (bio.skills.length > 0) {
@@ -125,15 +125,6 @@ bio.display = function() {
 
 	displaySkills();
 
-	function displayFooter() {
-		$("#footerContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
-		$("#footerContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
-		$("#footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
-		$("#footerContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
-		$("#footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
-	}
-
-	displayFooter();
 };
 
 bio.display();
